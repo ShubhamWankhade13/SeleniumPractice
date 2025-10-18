@@ -1,4 +1,4 @@
-package Day2;
+package SeleniumAllMethods;
 
 import java.awt.RenderingHints.Key;
 import java.time.Duration;
