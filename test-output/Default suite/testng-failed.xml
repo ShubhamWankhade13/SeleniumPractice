@@ -3,6 +3,24 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+      <class name="TestNgAllMethods.DataProviderTest">
+        <methods>
+          <include name="TestLogin" invocation-numbers="0 1"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestNgAllMethods.DataProviderTest -->
+      <class name="TestNgAllMethods.Assertions">
+        <methods>
+          <include name="testTitle"/>
+        </methods>
+      </class> <!-- TestNgAllMethods.Assertions -->
+      <class name="TestNgAllMethods.parallelTesting">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- TestNgAllMethods.parallelTesting -->
       <class name="TestNgAllMethods.TestNgListeners">
         <methods>
           <include name="testCurrentUrl"/>
